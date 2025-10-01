@@ -1,5 +1,8 @@
 # A java client for docker registry api v2
 
+> [!WARNING]  
+> **Deprecated:** This repository is no longer maintained. Please see [cytomine/cytomine](https://github.com/cytomine/cytomine) for the latest version.
+
 ### Usage：
 ```java
 RegistryClient.config("http" , "localhost" , "5000");
