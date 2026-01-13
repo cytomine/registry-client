@@ -21,17 +21,13 @@ class RegistryManagerTest {
 
     private final RegistryManager REGISTRY_OPERATE = new RegistryManager();
 
-    private final Authenticator AUTHENTICATOR = Authenticator.instance();
-
-
-    String host ;
     @BeforeAll
     static void init() throws IOException {
         // environment variables
         LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
         Logger logger = loggerContext.getLogger("ROOT");
         logger.setLevel(Level.DEBUG);
-        RegistryClient.config("http" , "registry" , "5000");
+        RegistryClient.config("http://registry:5000");
 
     }
 
